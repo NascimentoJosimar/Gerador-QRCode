@@ -1,0 +1,23 @@
+body {
+    background-image: linear-gradient(to right, #6495ED, #EE82EE);
+}
+
+.qr-code {
+    max-width: 200px;
+    margin: 10px;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+.card {
+    background-color: #E6E6FA;
+    box-shadow: 3px 6px 8px 3px rgba(100, 100, 100, 0.3);
+    margin: 0 auto;
+}
+
+img {
+    width: 500px;
+    height: 500px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Gerador de QRCode</title>
+</head>
+
+<body>
+    
+    <div class="container w-50">
+        <div class="card px-4 pt-3">
+            <div class="text-center pb-3">
+                <h2>Gerador de QRCode</h2>
+                <hr>
+            </div>
+
+            <div class="form-horizontal">
+                <div class="form-group pb-3 text-center">
+                    <label for="content" class="control-label">Digite o conteúdo</label>
+                    <div>
+                        <input type="text" id="content" class="form-control mt-1" maxlength="256"></input>
+                    </div>
+                </div>
+            </div>
+            <div class="pb-3 text-center">
+                <button class="btn btn-primary px-5" onclick="GerarQRCode()">Gerar QRCode</button>
+            </div>
+            <div class="pb-3 text-center">
+                <img src="https://chart.googleapis.com/chart?cht=qr&chl=Hello+World&chs=160x160&chld=L|0"
+                    id="QRCodeImage" class="qr-code img-thumbnail img-responsive">
+            </div>
+            <hr>
+            <footer class="text-center text-muted mb-3">&copy;2023 | Desenvolvido por Josimar Nascimento</footer>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
